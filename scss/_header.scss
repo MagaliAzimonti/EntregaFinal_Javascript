@@ -1,0 +1,65 @@
+@import "./variables";
+@import "./extends";
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+/* font-family: 'Indie Flower', cursive; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    color: nth($list: $color, $n:1 );
+}
+
+h1 {
+    color: nth($list: $color, $n:1 );
+}
+
+h2 {
+    color: nth($list: $color, $n:1 );
+}
+
+hr {
+    color: nth($list: $color, $n:1 );
+}
+
+a {
+    text-decoration: none;
+    color: nth($list: $color, $n:1 );
+}
+
+li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+li.nav-item a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    padding-left: 0%;
+}
+
+/* HEADER */
+header {
+    background-color: pink;
+    div.logo_img {
+        @extend %flex;
+        a {
+            font-family: 'Indie Flower', cursive;
+            font-size: 35px;
+            margin-left: 15px;
+        }
+    }
+    
+}
+hr {
+    color: black;
+}
+h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
